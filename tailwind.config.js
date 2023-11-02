@@ -10,6 +10,8 @@ module.exports = {
       blue: colors.blueGray,
       white: colors.white,
       pink: colors.pink,
+      transparent: colors.transparent,
+      brown: colors.brown,
     },
     screens: {
       'sm': '300px',

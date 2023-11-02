@@ -1,31 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { BiMenu, BiX } from "react-icons/bi";
-
-
-function useOutsideAlerter(ref, setOpenNav) {
-  useEffect(() => {
-
-    function handleClickOutside(event) {
-      if (ref.current && !ref.current.contains(event.target)) {
-        setOpenNav(false);
-      }
-    }
-
-    // Bind the event listener
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      // Unbind the event listener on clean up
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [ref, setOpenNav]);
-}
 
 const Navbar = ({ logo }) => {
 
   const [openNav, setOpenNav] = useState(false);
 
   const wrapperRef = useRef(null);
-  useOutsideAlerter(wrapperRef, setOpenNav);
 
   return (
     <>
@@ -41,11 +21,11 @@ const Navbar = ({ logo }) => {
           <a onClick={() => setOpenNav(false)} href="#contact" className="text-lg font-semibold text-blue-800 transition-all hover:text-pink-500">Contatos</a>
         </div>
 
-        <div className="-mr-2 flex items-center md:hidden absolute z-50 right-2">
+        <div className="flex items-center md:hidden absolute z-50 right-2 ">
           <button
             onClick={() =>
               setOpenNav(
-                (previousState) => !previousState
+                !openNav
               )
             }
             className=" p-2 rounded-md text-gray-600 hover:text-gray-500 hover:bg-gray-100 focus:outline-none transition duration-300 ease-in-out"
