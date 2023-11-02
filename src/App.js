@@ -3,7 +3,7 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 
-import logo from "./assets/logo.png";
+import logo from "./assets/logo.jpg";
 
 
 function App() {

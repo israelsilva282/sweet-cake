@@ -14,7 +14,7 @@ const Hero = ({appType, tagLine, description, mainActionText, extraActionText}) 
             {tagLine}
           </p>
         </div>
-        <div className="relative z-50 flex flex-col items-center justify-between h-48 lg:space-x-8 pt-7 lg:pt-0 lg:flex-row lg:justify-between lg:w-90">
+        <div className="relative flex flex-col items-center justify-between h-48 lg:space-x-8 pt-7 lg:pt-0 lg:flex-row lg:justify-between lg:w-90">
           <button
             className="pt-3 pb-3 pl-12 pr-12 text-2xl font-semibold text-center text-white transition-all bg-pink-600 rounded-full shadow-2xl lg:ml-5 hover:bg-pink-800 focus:outline-none lg:font-medium "
           >
