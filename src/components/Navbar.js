@@ -11,17 +11,17 @@ const Navbar = ({ logo }) => {
     <>
       <div className="flex items-center justify-between h-28">
         <a href="/" className="pl-7 lg:ml-10">
-          <img src={logo} alt="logo" className="h-24" />
+          <img src={logo} alt="logo" className="h-16 lg:h-24" />
         </a>
 
         {/* Desktop Nav */}
-        <div className="hidden justify-around w-2/5 mr-12 lg:visible sm:invisible md:flex">
+        <div className="hidden justify-around w-2/5 mr-12 lg:visible sm:invisible lg:flex">
           <a onClick={() => setOpenNav(false)} href="/" className="text-lg font-semibold text-blue-800 transition-all hover:text-pink-500">Início</a>
           <a onClick={() => setOpenNav(false)} href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-pink-500">Produtos</a>
           <a onClick={() => setOpenNav(false)} href="#contact" className="text-lg font-semibold text-blue-800 transition-all hover:text-pink-500">Contatos</a>
         </div>
 
-        <div className="flex items-center md:hidden absolute z-50 right-2 ">
+        <div className="flex items-center lg:hidden absolute z-50 right-2 ">
           <button
             onClick={() =>
               setOpenNav(

@@ -11,7 +11,7 @@ const Step = ({ title, heading, description, img, alternate }) => {
         <p className="text-4xl font-semibold leading-relaxed text-center text-blue-800 lg:text-3xl lg:font-bold lg:text-left">{heading}</p>
         <p className="text-2xl leading-10 text-center text-gray-400 lg:w-5/6 lg:text-lg lg:text-left">{description}</p>
       </div>
-      <img className=" h-96 mx-auto rounded-xl" src={img} alt="Bolo de cenoura" />
+      <img className="w-96 mx-auto rounded-xl max-w-[90%]" src={img} alt="Bolo de cenoura" />
 
     </div>
   )

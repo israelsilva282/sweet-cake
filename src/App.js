@@ -27,7 +27,8 @@ function App() {
     bottomLead: {
       actionText: 'Formas de pagamento',
       description: 'Pagamentos somente em espécie e pix!',
-      mainActionText: 'Comprar',
+      mainActionText: 'Espécie',
+      secondaryActionText: 'Pix',
     },
   }
   return (
@@ -58,6 +59,7 @@ function App() {
           actionText={data.bottomLead.actionText}
           description={data.bottomLead.description}
           mainActionText={data.bottomLead.mainActionText}
+          secondaryActionText={data.bottomLead.secondaryActionText}
         />
 
         <Footer logo={logo} />
