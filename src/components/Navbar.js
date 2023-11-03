@@ -18,7 +18,9 @@ const Navbar = ({ logo }) => {
         <div className="hidden justify-around w-2/5 mr-12 lg:visible sm:invisible lg:flex">
           <a onClick={() => setOpenNav(false)} href="/" className="text-lg font-semibold text-blue-800 transition-all hover:text-pink-500">Início</a>
           <a onClick={() => setOpenNav(false)} href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-pink-500">Produtos</a>
+          <a onClick={() => setOpenNav(false)} href="#formaPagamento" className="text-lg font-semibold text-blue-800 transition-all hover:text-pink-500">Formas de pagamento</a>
           <a onClick={() => setOpenNav(false)} href="#contact" className="text-lg font-semibold text-blue-800 transition-all hover:text-pink-500">Contatos</a>
+          
         </div>
 
         <div className="flex items-center lg:hidden absolute z-50 right-2 ">
@@ -58,6 +60,7 @@ const Navbar = ({ logo }) => {
         <div className="flex flex-col items-center justify-around h-full pt-5">
           <a onClick={() => setOpenNav(false)} href="/" className="text-lg font-semibold text-blue-800 transition-all hover:text-pink-500">Início</a>
           <a onClick={() => setOpenNav(false)} href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-pink-500">Produtos</a>
+          <a onClick={() => setOpenNav(false)} href="#formaPagamento" className="text-lg font-semibold text-blue-800 transition-all hover:text-pink-500">Formas de pagamento</a>
           <a onClick={() => setOpenNav(false)} href="#contact" className="text-lg font-semibold text-blue-800 transition-all hover:text-pink-500">Contatos</a>
         </div>
       </div>

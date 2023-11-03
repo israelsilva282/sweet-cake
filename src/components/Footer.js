@@ -8,11 +8,11 @@ const Footer = ({ logo }) => {
         <img src={logo} alt="logo" className="w-28 max-w-[90%]" />
       </a>
       <div className="flex items-center justify-around pt-5 lg:pt-0 space-x-10">
-        <a href="#" className="hover:scale-105">
+        <a href="https://wa.me/5584997075439" target="_blank" className="hover:scale-105" rel="noreferrer">
           <BsWhatsapp size={30} />
         </a>
 
-        <a href="#" className="hover:scale-105">
+        <a href="https://www.instagram.com/___israelll/" target="_blank" className="hover:scale-105" rel="noreferrer">
           <BsInstagram size={30} />
         </a>
       </div>

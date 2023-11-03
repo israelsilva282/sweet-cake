@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    scroll-behavior: smooth;
+}
+
 .ReactModal__Overlay {
     opacity: 0;
     transition: opacity 300ms;
