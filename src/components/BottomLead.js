@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import qrcode from '../assets/qrcode.png';
 import Modal from "./Modal";
 
 const BottomLead = ({ actionText, description, mainActionText, secondaryActionText }) => {
@@ -35,7 +36,7 @@ const BottomLead = ({ actionText, description, mainActionText, secondaryActionTe
 
       <Modal show={modalIsOpen} onClose={closeModal}>
         <div className="flex flex-col items-center justify-center space-y-5">
-          <div className="text-center w-11/12 max-w-xs border border-black">QR CODE</div>
+          <img src={qrcode} alt="QR Code para pix"/>
           <div className="flex flex-col items-center">
             <p>Chave pix:</p>
             <span>(84) 9 9707-5439</span>

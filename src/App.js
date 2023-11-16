@@ -22,7 +22,7 @@ function App() {
     content: {
       title: 'Bolo de Cenoura',
       heading: '',
-      description: 'Valor: R$ 4,00',
+      description: 'Valor: R$ 5,00',
       img: bolo,
       alternate: false,
     },
